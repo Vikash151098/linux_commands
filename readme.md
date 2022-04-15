@@ -1,5 +1,4 @@
-linux commans bellows:-
-
+# linux commans bellows:-
 
 pwd- show current path
 cd - change directory e.g. cd .., cd ../.., cd foldername, cd ~
@@ -8,7 +7,7 @@ cd - change directory e.g. cd .., cd ../.., cd foldername, cd ~
 
 e.g. cd ~/Desktop
 
-Creating file and folder
+## Creating file and folder
 
 mkdir /tmp/tutorial
 cd /tmp/tutorial
@@ -27,43 +26,52 @@ mkdir "folder 4" "folder 5"
 mkdir -p "folder 6"/"folder 7"
 ls
 
-Creating files using redirection
+## Creating files using redirection
 ls
 ls > output.txt
 cat output.txt
+
 echo "This is a test"
 echo "This is a test" > test_1.txt
 echo "This is a second test" > test_2.txt
 echo "This is a third test" > test_3.txt
 ls
+
 cat test_1.txt test_2.txt test_3.txt
 cat test_1.txt test_2.txt test_3.txt
 cat test_?.txt
 cat test_*
+
 cat t* > combined.txt
 cat combined.txt
+
 cat t* >> combined.txt
 echo "I've appended a line!" >> combined.txt
 cat combined.txt
+
 less combined.txt
 echo "Lower case" > a.txt
 echo "Upper case" > A.TXT
 echo "Mixed case" > A.txt
 
-Moving and manipulating files
+## Moving and manipulating files
 
 mv combined.txt dir1
 ls dir1
+
 mv dir1/* .
 mv combined.txt test_* dir3 dir2
 ls
+
 ls dir2
 mv dir2/combined.txt dir4/dir5/dir6
 ls dir2
+
 ls dir4/dir5/dir6
 cp dir4/dir5/dir6/combined.txt .
 ls dir4/dir5/dir6
 ls
+## Copy file and folder
 cp combined.txt backup_combined.txt
 ls
 mv backup_combined.txt combined_backup.txt
@@ -76,7 +84,7 @@ mv "folder 5" folder_5
 mv "folder 6" folder_6
 ls
 
-Deleting files and folders
+## Deleting files and folders
 
 m dir4/dir5/dir6/combined.txt combined_backup.txt
 rm folder_*
@@ -87,7 +95,7 @@ ls
 rm -i foldername or filename
 
 
-A bit of plumbing
+## A bit of plumbing
 
 wc -l combined.txt
 
@@ -112,12 +120,12 @@ sort combined.txt | less
 sort combined.txt | uniq | wc -l
 
 
-Super Use 
+## Super User 
 
 cat /etc/shadow
 sudo cat /etc/shadow
 
-Hidden files
+## Hidden files
 
 cd /tmp/tutorial
 ls
